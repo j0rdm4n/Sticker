@@ -4,8 +4,10 @@ var express = require('express'),
 	io = require('socket.io').listen(server);
 
 app.configure(function() {
-    app.use(express.static(__dirname + '/public'));
+    app.use(express.static(__dirname + '/www'));
 });
+io.sockets.on('connection', function(socket) {
 
+});
 
 server.listen(8888);
