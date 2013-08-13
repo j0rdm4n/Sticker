@@ -4,8 +4,8 @@ var express = require('express'),
 	io = require('socket.io').listen(server);
 
 app.configure(function() {
-    app.use(express.static(__dirname + '../'));
+    app.use(express.static(__dirname + '/public'));
 });
 
 
-server.listen(1337);
+server.listen(8888);
