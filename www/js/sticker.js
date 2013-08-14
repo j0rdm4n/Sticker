@@ -1,0 +1,14 @@
+var sticker = angular.module('sticker', []);
+
+
+sticker.controller('stickers', function($scope, socket) {
+	
+});
+
+sticker.factory('socket', function($rootScope){
+
+});
+
+sticker.directive('stickerDef', function(socket) { 
+
+});
