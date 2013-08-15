@@ -7,4 +7,4 @@ npm install
 npm app.js
 
 =================
-http://www.sticker.nodejitsu.com/
+http://sticker.jit.su/
