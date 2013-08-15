@@ -1,7 +1,7 @@
 var sticker = angular.module('sticker', []);
 
 
-sticker.controller('stickers', function($scope, socket) {
+sticker.controller('trendingstickers', function($scope, socket) {
 	
 });
 

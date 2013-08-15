@@ -9,14 +9,15 @@
 	<link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body ng-controller="stickers">
+<body>
 <ul class="nav" id="navigation">
 	<li><a class="live-stream" href="/liveStream.html">Live Sticks</a></li>
 	<li><a class="trending-stream" href="index.html" id="active">Trending</a></li>
 	<li><a class="my-sticks" href="/mySticks.html">My Sticks</a></li>	
 </ul>
 <div class="stickerboard">
-
+<ul class="trending-sticks" ng-controller="trendingstickers">
+</ul>
 </div>
 </body>
 </html>
