@@ -17,13 +17,15 @@ connection.connect(function(err) {
         console.log("   Connected to database: "+conn_conf.database+' on '+conn_conf.host );
     }
 });
-connection.query( 'SELECT * FROM sticker.stickers ', function(err, rows) {
-            console.log("SELECT * FROM stickers ");
 
-            for(var i=0; i<rows.length; i++){
+
+this.query = function(querydata) {
+	connection.query( querydata, function(err, rows) {
+			 for(var i=0; i<rows.length; i++){
                 console.log(rows[i]);
             }
 
             return rows;
 
-    });
+	});
+}

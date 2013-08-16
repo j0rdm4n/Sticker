@@ -11,5 +11,7 @@ app.configure(function() {
 io.sockets.on('connection', function(socket) {
 
 });
+console.log(db.query('SELECT * FROM stickers'));
+
 
 server.listen(8888);
