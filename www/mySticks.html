@@ -7,13 +7,27 @@
 	<script src="/js/angular.min.js"></script>
 	<script src="/js/sticker.js"></script>
 	<link rel="stylesheet" href="/css/styles.css">
+	<script>
+	 $(document).ready(function () {
+            $('#new_stick').click(function () {
+               $.ajax({
+                    url: "",
+                    type: "",
+                    contentType: "",
+                    processData: false,
+                    complete: function (data) {
+                    }
+                });
+            });
+        });
+	</script>
 </head>
 <body ng-controller="stickers">
 <ul class="nav" id="navigation">
 	<li><a class="live-stream" href="/liveStream.html">Live Sticks</a></li>
 	<li><a class="trending-stream" href="index.html">Trending</a></li>
 	<li><a class="my-sticks" href="/mySticks.html" id="active">My Sticks</a></li>	
-	<button style="float:right;" ng-click="newStick()">New Stick</button>
+	<button style="float:right;" id="new_stick" ng-click="newStick()">New Stick</button>
 </ul>
 
 <div class="stickerboard"></div>
